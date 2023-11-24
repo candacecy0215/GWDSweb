@@ -1,6 +1,36 @@
+header {
+    background-color:rgb(206, 249, 249)
+}
+h1{
+    font-family: fantasy;
+    text-align:left;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+ul {
+    list-style-type: none;
+    padding:5px;
+}
+
 .container-navigation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 10px;
+    margin: 0px 3px;
+    border: 1px; 
+    border-radius: 5px;
+    background-color: rgb(148, 213, 229);
+}
+
+.section-one {
+    /* border: 1px ; */
+    background-color: rgb(129, 217, 239);
 }
