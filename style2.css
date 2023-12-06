@@ -1,3 +1,31 @@
+header {
+    background-color:whitesmoke;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.container-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+}
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 10px;
+    margin: 5px 4px;
+    border: 1px; 
+    border-radius: 5px;
+    background-color: #f7619d;
+    justify-content: center;
+    /* background-color: lightgoldenrodyellow; */
+    
+}
 a {
     color:lavenderblush;
 }
@@ -32,6 +60,7 @@ h2 {
     display:flex;
     justify-content: space-evenly;
     flex-wrap:wrap;
+    padding:20px;
 }
 .Typography-grp {
     display:flex;
