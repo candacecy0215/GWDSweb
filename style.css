@@ -2,9 +2,13 @@ body {
     background-color:#b0acea;
     margin:0;
     gap:0;
+    padding:5px;
 }
+
+
 header {
-    background-color:whitesmoke
+    background-color:whitesmoke;
+    padding: 10px;
 }
 h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -26,10 +30,10 @@ ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content:center;
 }
 
-li {
+button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     padding: 10px;
@@ -53,22 +57,24 @@ h2 {
     border: 0px ;
     background-color: #628af6;
     margin:0px;
-
+    padding: 30px;
 }
 
 .container {
-    display:flex
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
 }
 .Typography-grp {
     display:flex;
-    justify-content: space-evenly; 
-    flex-wrap: wrap;  
+    justify-content:center; 
+    flex-wrap:wrap;  
 }
 .Typography {
     display:flex;
     flex-wrap:wrap;
-    width:100px;
-    height:100px;
+    width:275px;
+    height:275px;
     padding:4px;
 }
 h4{
@@ -84,6 +90,7 @@ h4{
 
 .section-two {
     background-color: #caecfe;
+    padding:30px;
 }
 h3 {
     font-size: 30px;
@@ -93,6 +100,7 @@ h3 {
 
 .section-three {
     background-color: #fa9797;
+    padding: 30px;
 }
 footer {
     background-color: #fdcdb3 ;
