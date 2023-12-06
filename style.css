@@ -40,9 +40,23 @@ button {
     margin: 5px 4px;
     border: 1px; 
     border-radius: 5px;
-    background-color: #f7619d
+    background-color: #f7619d;
+    justify-content: flex-end;
     /* background-color: lightgoldenrodyellow; */
     
+}
+a {
+    color:lavenderblush;
+}
+button1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 10px;
+    margin: 5px 4px;
+    border: 1px; 
+    border-radius: 5px;
+    background-color: #f1c3aa;
+    justify-content:right;
 }
 
 h2 {
@@ -52,6 +66,7 @@ h2 {
     color: aliceblue;
     margin:10px;
     border: 1px;
+    padding:10px;
 }
 .section-one {
     border: 0px ;
@@ -75,7 +90,7 @@ h2 {
     flex-wrap:wrap;
     width:275px;
     height:275px;
-    padding:4px;
+    padding:10px;
 }
 h4{
     font-size: 20px;
@@ -97,10 +112,16 @@ h3 {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    
+}
+h5{
+    font-size:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .section-three {
-    background-color: #cee5d5;
+    background-color: #cef5d5;
     padding: 30px;
 }
 .section-four{
@@ -108,8 +129,9 @@ h3 {
     padding:30px;
 }
 footer {
-    background-color: #fdcdb3 ;
+    background-color: #fcf6b5 ;
     font-size: 15px;
     font-style: italic;
     text-align:center;
+    padding:20px;
 }
