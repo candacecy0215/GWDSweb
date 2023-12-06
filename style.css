@@ -81,6 +81,7 @@ h4{
     font-size: 20px;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
+    color:antiquewhite
 }
 .caption {
     font-size: 15px;
@@ -89,7 +90,7 @@ h4{
 }
 
 .section-two {
-    background-color: #caecfe;
+    background-color: #b7d3e9;
     padding:30px;
 }
 h3 {
@@ -99,8 +100,12 @@ h3 {
 }
 
 .section-three {
-    background-color: #fa9797;
+    background-color: #cee5d5;
     padding: 30px;
+}
+.section-four{
+    background-color: #a7e0e1;
+    padding:30px;
 }
 footer {
     background-color: #fdcdb3 ;
