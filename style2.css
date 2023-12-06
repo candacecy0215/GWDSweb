@@ -64,7 +64,7 @@ h2 {
 }
 .Typography-grp {
     display:flex;
-    justify-content:center; 
+    justify-content:space-evenly; 
     flex-wrap:wrap;  
 }
 .Typography {
@@ -78,7 +78,7 @@ h4{
     font-size: 20px;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
-    color:antiquewhite
+    color:antiquewhite;
 }
 .caption {
     font-size: 15px;
