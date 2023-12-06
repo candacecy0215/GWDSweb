@@ -79,6 +79,7 @@ h2 {
     display:flex;
     justify-content: space-evenly;
     flex-wrap:wrap;
+    margin:0;
 }
 .Typography-grp {
     display:flex;
@@ -88,13 +89,13 @@ h2 {
 .Typography {
     display:flex;
     flex-wrap:wrap;
-    width:275px;
-    height:275px;
+    width:175px;
+    height:175px;
     padding:10px;
 }
 h4{
-    font-size: 20px;
-    text-align: left;
+    font-size: 23px;
+    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color:antiquewhite
 }
