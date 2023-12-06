@@ -1,5 +1,10 @@
+body{
+    background-color:#d2c8f1;
+    padding: 15px;
+}
+
 header {
-    background-color:whitesmoke;
+    background-color:#f1ebc8;
     padding: 10px;
 }
 
@@ -27,31 +32,31 @@ button {
     
 }
 a {
-    color:lavenderblush;
+    color:mistyrose;
 }
 button1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    padding: 10px;
+    font-size: 20px;
+    padding: 13px;
     margin: 5px 4px;
     border: 1px; 
     border-radius: 5px;
-    background-color: #f1c3aa;
-    justify-content:right;
+    background-color: #b0acea;
+    justify-content:flex-start;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
-    color: aliceblue;
+    color:#567ace;
     margin:10px;
     border: 1px;
     padding:10px;
 }
 .section-one {
     border: 0px ;
-    background-color: #628af6;
+    background-color: #a7e0e1;
     margin:0px;
     padding: 30px;
 }
@@ -84,4 +89,11 @@ h4{
     font-size: 15px;
     font-style: italic;
     text-align:center;
+}
+footer {
+    background-color: #fcf6b5 ;
+    font-size: 15px;
+    font-style: italic;
+    text-align:center;
+    padding:20px;
 }
