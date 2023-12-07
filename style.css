@@ -47,6 +47,7 @@ button {
 }
 a {
     color:lavenderblush;
+    text-align: center;
 }
 button1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -85,6 +86,7 @@ h2 {
     display:flex;
     justify-content:center; 
     flex-wrap:wrap;  
+    flex-direction: column;
 }
 .Typography {
     display:flex;
@@ -129,6 +131,26 @@ h5{
     background-color: #f9be82;
     padding:30px;
 }
+.section-five{
+    background-color:#fcbdc7;
+    padding:30px;
+    text-align: center;
+}
+h6 {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.itcc {
+    display:flex;
+    justify-content:center; 
+    flex-wrap:wrap;  
+    flex-direction: column;
+    padding:10px;
+    text-align: center;
+}
+
 footer {
     background-color: #fcf6b5 ;
     font-size: 15px;
