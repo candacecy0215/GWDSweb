@@ -103,7 +103,7 @@ h4{
     color:antiquewhite
 }
 .caption {
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
     text-align:center;
 }
@@ -116,6 +116,7 @@ h3 {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    text-align: center;
     
 }
 h5{
@@ -125,12 +126,25 @@ h5{
 }
 
 .section-three {
-    background-color: #cef5d5;
+    background-color: #a7e0e1;
     padding: 30px;
 }
 .section-four{
-    background-color: #f9c9b0;
+    background-color: #cee5d5;
     padding:30px;
+}
+button2 {
+    font-size:large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px;
+    background-color:#2f3231;
+    border:1px;
+    border-radius:5px;
+}
+.ws {
+    font-size: large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .section-five{
     background-color:#fcbdc7;
@@ -165,7 +179,7 @@ h6 {
     max-width:425px;
     height:auto; 
     padding:20px;
-    justify-items: center;
+    justify-content: center;
 
 }
 
