@@ -81,7 +81,7 @@ h2 {
     display:flex;
     justify-content: space-evenly;
     flex-wrap:wrap;
-    margin:0;
+    
 }
 .Typography-grp {
     display:flex;
@@ -146,36 +146,29 @@ h6 {
 }
 .itcc {
     display:flex;
-    justify-content:center; 
+    justify-content:space-evenly; 
     flex-wrap:wrap;  
     flex-direction: column;
     align-items: center;
-    padding:10px;
+    padding:20px;
     text-align: center;
     margin: 5px 4px;
     border: 1px; 
     border-radius: 5px;
     background-color: #e69293;
-    /* justify-content: flex-end; */
+    
 }
-.itcc-pic1 {
+.itcc-pic {
     display:flex;
     flex-wrap:wrap;
-    aspect-ratio: 8,5;
-    /* width:240px;
-    height:150px; */
+    width:100%;
+    max-width:425px;
+    height:auto; 
     padding:20px;
     justify-items: center;
 
 }
-.itcc-pic2 {
-    display:flex;
-    flex-wrap:wrap;
-    /* width:300px;
-    height:200px; */
-    padding:20px;
-    justify-content: center;
-}
+
 
 footer {
     background-color: #fcf6b5 ;
