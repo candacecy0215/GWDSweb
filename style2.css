@@ -77,9 +77,16 @@ h2 {
 .Typography {
     display:flex;
     flex-wrap:wrap;
+    width:100%;
+    max-width:425px;
+    height:auto; 
+    padding:20px;
+    justify-content: center;
+    /* display:flex;
+    flex-wrap:wrap;
     width:425px;
     height:425px;
-    padding:10px;
+    padding:10px; */
 }
 h4{
     font-size: 25px;
