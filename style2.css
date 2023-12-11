@@ -1,11 +1,13 @@
 body{
     background-color:#d2c8f1;
     padding: 15px;
+    justify-content: center;
 }
 
 header {
     background-color:#f1ebc8;
     padding: 10px;
+    
 }
 
 /* ul {
@@ -56,12 +58,13 @@ h2 {
     border: 1px;
     padding-top:10px;
     text-align: left;
+    word-wrap:break-word;
 }
 .section-one {
     border: 0px ;
     background-color: #a7e0e1;
     margin:0px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .container {
@@ -69,13 +72,16 @@ h2 {
     justify-content: space-evenly;
     flex-wrap:wrap;
     padding:20px;
-}
+    /* flex-direction: row; */
+ } 
 .Typography-grp {
     display:flex;
-    justify-content:space-evenly; 
+    justify-content:baseline; 
+    
     flex-wrap:wrap;  
     flex-direction: column;
     padding:10px;
+    
 }
 .Typography {
     display:flex;
@@ -85,7 +91,10 @@ h2 {
     height:auto; 
     padding-top:20px;
     justify-content: center;
-    margin-top: auto;
+    
+    
+    align-content: baseline;
+    
     /* display:flex;
     flex-wrap:wrap;
     width:425px;
@@ -99,9 +108,12 @@ h4{
     color:#535fa1;
 }
 .caption {
-    font-size: 15px;
+    font-size: 20px;
     font-style: italic;
-    text-align:center;
+    text-align: center;
+    width:100%;
+    max-width:425px;
+    padding-top:10px;
 }
 footer {
     background-color: #f9c9b0 ;
