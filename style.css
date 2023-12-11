@@ -94,8 +94,9 @@ h2 {
 .Typography {
     display:flex;
     flex-wrap:wrap;
-    width:175px;
-    height:175px;
+    width:100%;
+    max-width: 375px;
+    height:auto;
     padding:10px;
 }
 h4{
@@ -125,6 +126,13 @@ h5{
 .section-three {
     background-color: #a7e0e1;
     padding: 30px;
+}
+.Reflection{
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    /* width:100%;
+    max-width:900px; */
 }
 .section-four{
     background-color: #cee5d5;
