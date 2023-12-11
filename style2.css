@@ -8,16 +8,18 @@ header {
     padding: 10px;
 }
 
-ul {
+/* ul {
     list-style-type: none;
 
-}
+} */
 
 .container-navigation {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content:center;
+    margin:auto;
+    padding:20px;
 }
 button {
     font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +54,7 @@ h2 {
     color:#567ace;
     margin:auto;
     border: 1px;
-    padding:10px;
+    padding-top:10px;
     text-align: left;
 }
 .section-one {
