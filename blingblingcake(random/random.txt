@@ -1,0 +1,69 @@
+function setup() {
+  createCanvas(400, 400); //canva size
+  frameRate(3); //speed rate
+  noStroke(); //thickness of the line=0
+}
+
+function draw() {
+  background(205, 189, 254); //set background colour
+
+  // decoration
+  for (let x = 60; x < width; x += 140) { //for loop
+    for (let y =60; y < height; y += 140) { //for loop
+      stroke(255); //outline:white
+      strokeWeight(2.5); //thickness of the line=2.5
+      fill(random(200, 255),random(165, 255),random(210, 255)); //random colour
+      circle(x - 39, y - 23, random(5,15)); //10 //position of the circle ("clock"), random size
+      circle(x - 23, y - 39, random(5,15)); //11 //position of the circle ("clock"), random size
+      circle(x - 23, y + 39, random(5,15)); //7 //position of the circle ("clock"), random size
+      circle(x - 39, y + 23, random(5,15)); //8 //position of the circle ("clock"), random size
+      circle(x + 23, y + 39, random(5,15)); //5 //position of the circle ("clock"), random size
+      circle(x + 39, y + 23, random(5,15)); //4 //position of the circle ("clock"), random size
+      circle(x + 39, y - 23, random(5,15)); //2 //position of the circle ("clock"), random size
+      circle(x + 23, y - 39, random(5,15)); //1 //position of the circle ("clock"), random size
+      fill(random(200, 255), random(165, 255),random(210, 255)); //random colour
+      circle(x + 45, y, random(5,15)); //3 //position of the circle ("clock"), random size
+      circle(x - 45, y, random(5,15)); //9 //position of the circle ("clock"), random size
+      circle(x, y + 45, random(5,15)); //6 //position of the circle ("clock"), random size
+      circle(x, y - 45, random(5,15)); //12 //position of the circle ("clock"), random size
+      fill(random(200, 255), random(165, 255),random(210, 255)); //random colour
+      circle(x - 17, y - 17, random(5,15)); //position of the circle, random size
+      circle(x + 17, y + 17, random(5,15)); //position of the circle, random size
+      circle(x - 17, y + 17, random(5,15)); //position of the circle, random size
+      circle(x + 17, y - 17, random(5,15)); //position of the circle, random size
+      fill(random(200, 255), random(165, 255),random(210, 255)); //random colour
+      circle(x - 24, y, random(5,15)); //position of the circle, random size
+      circle(x, y - 24, random(5,15)); //position of the circle, random size
+      circle(x + 24, y, random(5,15)); //position of the circle, random size
+      circle(x, y + 24, random(5,15)); //position of the circle, random size
+      fill(random(200, 255), random(165, 255),random(210, 255)); //random colour
+      circle(x, y, random(5,15)); //position of the circle, random size
+    }
+  }
+  if (mouseIsPressed) { //condition
+    stroke(random(200, 255), random(165, 255), random(210, 255)); //random outline colour
+    strokeWeight(3.5); //thickness of the line=3.5
+  } else{ //condition
+    noStroke() ;//thickness of the line=0
+  } 
+  // Candle
+  fill(255, random(204, 247), 180); //random  colour
+  ellipse(200, 75, random(25, 50), random(50, 75)); //candle flame
+  fill(255, random(235, 255), 0); //random  colour
+  ellipse(200, 85, random(15, 25), random(25, 40)); //candle flame
+
+  fill(254, 162, 164); //colour:coral
+  rect(190, 100, 20, 70); //candle
+  
+  
+  // Cake
+  fill(232, 211, 200); //flavour: coffee
+  rect(150, 140, 100, 70, 25, 25, 25); // 1st layer of the cake
+
+  fill(134, 109, 99); //flavour:chocolate
+  rect(120, 195, 160, 80, 25, 25, 25); //2nd layer of the cake
+
+  fill(255); //flavour: vanilla
+  rect(90, 260, 220, 100, 25, 25, 25); // 3rd layer
+  
+}

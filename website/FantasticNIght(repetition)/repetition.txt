@@ -1,0 +1,84 @@
+let buildingHeights=[160,120,70,100,135,115,80,140,240,95,160,85]; //array:buildings height
+let colors=['#d9598c','#f1d2e7','#f1c3aa','#db706c','#f3aa51','#fcf695','#cee5d5','#a7e0e1','#b7d3e9','#567ace','#bbb0dc','#fff']; //array:buildings colour
+
+function setup() {
+  createCanvas(600, 400); //canvas size
+  
+}
+
+function draw() {
+  //sky
+  background('#5a568f'); //background colour:dark purple
+  
+  //fireworks
+    for(let x=60;x<width;x=x+120) { //for loop
+      for(let y=random(50,100);y<150;y=y+100) { //for loop
+        
+          noStroke(); //no outline
+      
+          fill('#D9D9FA'); //fireworks colour: coral
+          circle(x-39,y-23,10); //10 //position of the circle ("clock")
+          circle(x-23,y-39,10); //11 //position of the circle ("clock")
+          circle(x-23,y+39,10); //7 //position of the circle ("clock")
+          circle(x-39,y+23,10); //8 //position of the circle ("clock")
+          circle(x+23,y+39,10); //5 //position of the circle ("clock")
+          circle(x+39,y+23,10); //4 //position of the circle ("clock")
+          circle(x+39,y-23,10); //2 //position of the circle ("clock")
+          circle(x+23,y-39,10); //1 //position of the circle ("clock")
+          fill('#F2ECCE'); //fireworks colour:lightyellow
+          circle(x+45,y,10); //3 //position of the circle ("clock")
+          circle(x-45,y,10); //9 //position of the circle ("clock")
+          circle(x,y+45,10); //6 //position of the circle ("clock")
+          circle(x,y-45,10); //12 //position of the circle ("clock")
+          circle(x-17,y-17,10); //position of the circle
+          circle(x+17,y+17,10); //position of the circle
+          circle(x-17,y+17,10); //position of the circle
+          circle(x+17,y-17,10); //position of the circle
+          fill('#F2A29B'); //fireworks colour: lightpurple
+          circle(x-24,y,10); //position of the circle
+          circle(x,y-24,10); //position of the circle
+          circle(x+24,y,10); //position of the circle
+          circle(x,y+24,10); //position of the circle
+          
+          circle(x,y,10); //position of the circle
+        
+      }   
+    }
+  
+  //buildings
+  noStroke(); //no outline 
+  for (let i=0; i<12; i++) { //for loop
+    fill(colors[i]); //building height according to the array
+    rect(i*50,300,50,-buildingHeights[i]); //position of the building
+  }
+  noLoop(); //stop looping
+ 
+  //ferris wheel
+  
+  fill(180,10,70); //colour:red
+  quad(305,280,335,280,350,305,290,305); //body of the ferris wheel
+  
+  noFill(); //no colour inside
+  strokeWeight(3.3); //thickness of the out line
+  stroke(150); //outline colour
+  triangle(320,260,345,260,333,236); //supports of the ferris wheel
+  triangle(320,260,295,260,307,236); //supports of the ferris wheel
+  triangle(320,260,308,282,332,282); //supports of the ferris wheel
+  
+  strokeWeight(9); //thickness of the out line
+  stroke(180,10,70); //outline colour: red
+  circle(320,260,50); //central hub of the ferris wheel
+  
+  noStroke(); //no outline
+  fill(150); //colour:grey
+  circle(320,260,15); // small central circle
+  
+  //ocean
+  fill('#0B1E59'); //colour:dark blue
+  rect(0,300,600,100); //position of ocean
+
+   fill(255); //colour: white
+   textFont('Comic Sans MS'); //font style
+   textSize(15); //font size
+   text('Welcome to Hong Kong!',20,350); //text position
+}

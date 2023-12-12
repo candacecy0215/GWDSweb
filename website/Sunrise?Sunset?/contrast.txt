@@ -1,0 +1,71 @@
+let colors; // array
+
+function setup() {
+  createCanvas(800, 500); //canva size
+  let currentHour = hour(); //link to real time
+  if (currentHour >= 7 && currentHour < 16) { //condition
+    //  daytime
+    colors= ['#F89B9C', '#FFB486', '#FFF06F', '#82FA91', '#93F6FA', '#7A8DF0', '#BFA7F2']; //colour of the rainbow
+  } else { //condition
+    // nighttime
+    colors = ['#F26D6D', '#F2A679', '#F2E085', '#93DB95', '#A5D1E8', '#485DD9', '#8278BF']; //colour of the rainbow
+  }
+}
+
+
+function draw() {
+  background(255); // Clear the canvas on each frame
+
+  let currentHour = hour(); //link to real time
+
+  if (currentHour >= 7 && currentHour < 16) { //condition
+    drawSunriseGradientSea(0, 200, 800, 300, color('#f2d785'), color('#0b1e59')); // colour of the sea:from yellow to dark bluein gradient
+    drawSunriseGradientSky(0, 0, 800, 350, color('#4a679f'), color('#ffd080')); // colour of the sky:from dark blue to yellow in gradient
+  } 
+  else  //condition
+  {
+    drawSunsetGradientSea(0, 200, 800, 300, color('#f27d72'), color('#597bc6')); // colour of the sea:from coral to pastel in gradient
+    drawSunsetGradientSky(0, 0, 800, 350, color('#75afcf'), color('#e29f8d')); // colour of the sky:from sky blue to coral in gradient
+  } 
+
+
+  // Rainbow
+  drawRainbow(400, 350, 200, 100); //position and size of the rainbow
+}
+
+function drawSunriseGradientSky(x, y, width, height, c1, c2) {
+  drawGradient(x, y, width, height, c1, c2); 
+}
+
+function drawSunriseGradientSea(x, y, width, height, c1, c2) {
+  drawGradient(x, y, width, height, c1, c2);
+}
+
+function drawSunsetGradientSky(x, y, width, height, c1, c2) {
+  drawGradient(x, y, width, height, c1, c2);
+}
+
+function drawSunsetGradientSea(x, y, width, height, c1, c2) {
+  drawGradient(x, y, width, height, c1, c2);
+}
+
+
+function drawGradient(x, y, width, height, c1, c2) {
+  noFill(); //no colour
+  for (let i = y; i <= y + height; i++) { //for loop
+    let inter = map(i, y, y + height, 0, 1); //position of the current iteration 
+    let c = lerpColor(c1, c2, inter); //current colour in condition
+    stroke(c); //stroke colour
+    line(x, i, x + width, i); //line at current y-coordinate
+  }
+}
+
+function drawRainbow(x, y, diameter, thickness) {
+  for (let i = 0; i < colors.length; i++) {
+    noStroke(); //no outline
+    fill(color(colors[i])); //fill colour according to the array
+    arc(x, y, diameter, diameter, PI, 0); // arc position and degree
+    diameter = diameter / 7 * 5.3; //adjust the next arc
+  }
+}
+
