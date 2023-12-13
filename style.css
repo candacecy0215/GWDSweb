@@ -95,7 +95,7 @@ h2 {
     display:flex;
     flex-wrap:wrap;
     width:100%;
-    max-width: 375px;
+    max-width: 300px;
     height:auto;
     padding:10px;
 }
@@ -131,8 +131,8 @@ h5{
     font-size: 20px;
     font-style: italic;
     text-align: left;
-    /* width:100%;
-    max-width:900px; */
+   /* width:100%;
+    max-width:900px;*/ 
 }
 .section-four{
     background-color: #cee5d5;
