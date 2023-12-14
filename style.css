@@ -125,6 +125,41 @@ h5{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+.container-CARP{
+    display:flex;
+    justify-content:baseline; 
+    flex-wrap:wrap;  
+    flex-direction: row;
+    align-items: center;
+    padding-left:40x;
+    padding-bottom: 20px;
+    text-align: left;
+    margin: 5px 4px;
+    border: 1px; 
+    border-radius: 5px;
+    max-width: 1100px;
+   
+}
+.Poster {
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    max-width: 500px;
+    height:auto;
+    padding:10px;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+.poster{
+    font-size: 23px;
+    font-style: italic;
+    text-align: left;
+    margin:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
 
 .section-three {
     background-color: #a7e0e1;
@@ -147,7 +182,7 @@ h5{
     
 }
 .Reflection{
-    font-size: 25px;
+    font-size: 23px;
     font-style: italic;
     text-align: left;
     margin:0;
